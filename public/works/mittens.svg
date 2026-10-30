@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 900">
+  <defs>
+    <pattern id="knit" width="24" height="20" patternUnits="userSpaceOnUse">
+      <path d="M2 2q7 3 10 15q3-12 10-15" fill="none" stroke="#000" stroke-opacity=".09" stroke-width="3.5" stroke-linecap="round"/>
+    </pattern>
+    <pattern id="rib" width="26" height="10" patternUnits="userSpaceOnUse">
+      <rect width="11" height="10" fill="#000" fill-opacity=".1"/>
+    </pattern>
+  </defs>
+  <rect width="700" height="900" fill="#e4eaf4"/>
+  <ellipse cx="350" cy="812" rx="210" ry="28" fill="#d3dcec"/>
+  <!-- 엄지 -->
+  <rect x="150" y="410" width="130" height="200" rx="65" transform="rotate(-28 215 510)" fill="#9fb4d3"/>
+  <!-- 장갑 몸판 -->
+  <path d="M220 640v-380q0-130 130-130t130 130v380z" fill="#a9bddb"/>
+  <path d="M220 640v-380q0-130 130-130t130 130v380z" fill="url(#knit)"/>
+  <!-- 눈송이 점무늬 -->
+  <g fill="#fbf5ec">
+    <circle cx="300" cy="300" r="16"/>
+    <circle cx="400" cy="300" r="16"/>
+    <circle cx="350" cy="380" r="16"/>
+    <circle cx="300" cy="460" r="16"/>
+    <circle cx="400" cy="460" r="16"/>
+    <circle cx="350" cy="540" r="16"/>
+  </g>
+  <!-- 고무뜨기 손목 -->
+  <rect x="200" y="630" width="300" height="130" rx="24" fill="#8199bd"/>
+  <rect x="200" y="630" width="300" height="130" rx="24" fill="url(#rib)"/>
+</svg>

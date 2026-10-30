@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#f3dccf"/>
+  <!-- 대바늘 -->
+  <g stroke-linecap="round">
+    <line x1="92" y1="318" x2="300" y2="74" stroke="#c9a27c" stroke-width="12"/>
+    <line x1="308" y1="318" x2="100" y2="74" stroke="#b98f68" stroke-width="12"/>
+    <circle cx="300" cy="74" r="14" fill="#a6584f"/>
+    <circle cx="100" cy="74" r="14" fill="#a6584f"/>
+  </g>
+  <!-- 실뭉치 -->
+  <circle cx="200" cy="218" r="104" fill="#d9958c"/>
+  <g fill="none" stroke="#c27d74" stroke-width="7" stroke-linecap="round">
+    <path d="M106 190q94-70 188 0"/>
+    <path d="M98 226q102-64 204 0"/>
+    <path d="M104 262q96-52 192 0"/>
+    <path d="M150 128q-60 90 0 180"/>
+    <path d="M200 114q-40 104 0 208"/>
+    <path d="M250 128q50 90 0 180"/>
+  </g>
+  <path d="M286 276q46 30 34 70q-8 26-44 22" fill="none" stroke="#d9958c" stroke-width="9" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-cream: #fbf5ec;
+  --color-paper: #fffdf9;
+  --color-oat: #f0e3d2;
+  --color-coral: #c96b62;
+  --color-blush: #f7e0dc;
+  --color-sage: #7f9f7a;
+  --color-cocoa: #54403a;
+  --color-latte: #7b6356;
+  --font-sans: var(--font-gowun-dodum), "Apple SD Gothic Neo", "Malgun Gothic",
+    sans-serif;
+  --font-display: var(--font-gaegu), var(--font-gowun-dodum), sans-serif;
+}
+
+body {
+  color: var(--color-cocoa);
+  font-family: var(--font-sans);
+  /* 크림색 바탕에 옅은 점무늬 */
+  background-color: var(--color-cream);
+  background-image: radial-gradient(#efe1cf 1.6px, transparent 1.6px);
+  background-size: 22px 22px;
+}
+
+/* 작품 상세 보기가 열려 있는 동안 뒤 화면이 스크롤되지 않게 한다. */
+html:has(dialog[open]) {
+  overflow: hidden;
+}

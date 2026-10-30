@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <defs>
+    <g id="sq-a">
+      <rect width="120" height="120" rx="10" fill="#fbf5ec"/>
+      <rect x="14" y="14" width="92" height="92" rx="14" fill="#d9958c"/>
+      <rect x="32" y="32" width="56" height="56" rx="14" fill="#f2cf9c"/>
+      <circle cx="60" cy="60" r="13" fill="#fbf5ec"/>
+    </g>
+    <g id="sq-b">
+      <rect width="120" height="120" rx="10" fill="#fbf5ec"/>
+      <rect x="14" y="14" width="92" height="92" rx="14" fill="#a9bfa3"/>
+      <rect x="32" y="32" width="56" height="56" rx="14" fill="#f3dccf"/>
+      <circle cx="60" cy="60" r="13" fill="#d9958c"/>
+    </g>
+    <g id="sq-c">
+      <rect width="120" height="120" rx="10" fill="#fbf5ec"/>
+      <rect x="14" y="14" width="92" height="92" rx="14" fill="#b9c7dd"/>
+      <rect x="32" y="32" width="56" height="56" rx="14" fill="#fbf5ec"/>
+      <circle cx="60" cy="60" r="13" fill="#f2cf9c"/>
+    </g>
+  </defs>
+  <rect width="900" height="600" fill="#f3e7d8"/>
+  <rect x="72" y="50" width="756" height="508" rx="22" fill="#e3d2bd"/>
+  <!-- 모티브 6 x 4 -->
+  <g transform="translate(84 54)">
+    <use href="#sq-a" x="0" y="0"/><use href="#sq-b" x="122" y="0"/><use href="#sq-c" x="244" y="0"/><use href="#sq-a" x="366" y="0"/><use href="#sq-b" x="488" y="0"/><use href="#sq-c" x="610" y="0"/>
+    <use href="#sq-c" x="0" y="122"/><use href="#sq-a" x="122" y="122"/><use href="#sq-b" x="244" y="122"/><use href="#sq-c" x="366" y="122"/><use href="#sq-a" x="488" y="122"/><use href="#sq-b" x="610" y="122"/>
+    <use href="#sq-b" x="0" y="244"/><use href="#sq-c" x="122" y="244"/><use href="#sq-a" x="244" y="244"/><use href="#sq-b" x="366" y="244"/><use href="#sq-c" x="488" y="244"/><use href="#sq-a" x="610" y="244"/>
+    <use href="#sq-a" x="0" y="366"/><use href="#sq-b" x="122" y="366"/><use href="#sq-c" x="244" y="366"/><use href="#sq-a" x="366" y="366"/><use href="#sq-b" x="488" y="366"/><use href="#sq-c" x="610" y="366"/>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900">
+  <defs>
+    <pattern id="knit" width="24" height="20" patternUnits="userSpaceOnUse">
+      <path d="M2 2q7 3 10 15q3-12 10-15" fill="none" stroke="#000" stroke-opacity=".13" stroke-width="3.5" stroke-linecap="round"/>
+    </pattern>
+    <clipPath id="body"><rect x="192" y="70" width="216" height="690" rx="14"/></clipPath>
+  </defs>
+  <rect width="600" height="900" fill="#f6e9dc"/>
+  <ellipse cx="300" cy="820" rx="190" ry="26" fill="#ead8c6"/>
+  <!-- 술 -->
+  <g stroke="#d9958c" stroke-width="9" stroke-linecap="round">
+    <path d="M210 752v78M234 752v84M258 752v76M282 752v86M306 752v78M330 752v84M354 752v76M378 752v86M398 752v78"/>
+  </g>
+  <!-- 목도리 몸판 -->
+  <g clip-path="url(#body)">
+    <rect x="192" y="70" width="216" height="690" fill="#d9958c"/>
+    <rect x="192" y="150" width="216" height="46" fill="#fbf5ec"/>
+    <rect x="192" y="222" width="216" height="22" fill="#fbf5ec"/>
+    <rect x="192" y="586" width="216" height="22" fill="#fbf5ec"/>
+    <rect x="192" y="634" width="216" height="46" fill="#fbf5ec"/>
+    <rect x="192" y="70" width="216" height="690" fill="url(#knit)"/>
+  </g>
+</svg>

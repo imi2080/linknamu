@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <pattern id="knit" width="28" height="24" patternUnits="userSpaceOnUse">
+      <path d="M3 3q8 3 11 17q3-14 11-17" fill="none" stroke="#000" stroke-opacity=".12" stroke-width="4" stroke-linecap="round"/>
+    </pattern>
+    <pattern id="rib" width="26" height="10" patternUnits="userSpaceOnUse">
+      <rect width="11" height="10" fill="#000" fill-opacity=".1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="800" fill="#e6eee0"/>
+  <ellipse cx="400" cy="672" rx="270" ry="30" fill="#d4e0cc"/>
+  <!-- 방울 -->
+  <circle cx="400" cy="170" r="74" fill="#fbf5ec"/>
+  <g fill="none" stroke="#e6d6c2" stroke-width="6" stroke-linecap="round">
+    <path d="M400 110v120M340 170h120M358 128l84 84M442 128l-84 84"/>
+  </g>
+  <!-- 모자 몸판 -->
+  <path d="M166 560q0-336 234-336t234 336z" fill="#a9bfa3"/>
+  <path d="M166 560q0-336 234-336t234 336z" fill="url(#knit)"/>
+  <!-- 고무뜨기 챙 -->
+  <rect x="140" y="540" width="520" height="116" rx="34" fill="#93ad8c"/>
+  <rect x="140" y="540" width="520" height="116" rx="34" fill="url(#rib)"/>
+</svg>
