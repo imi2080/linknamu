@@ -6,7 +6,7 @@ import { getCounts } from "@/lib/counters";
 
 export default function Home() {
   return (
-    <main className="mx-auto w-full max-w-xl flex-1 px-4 pt-12 pb-10 sm:pt-16">
+    <main className="mx-auto w-full max-w-4xl flex-1 px-4 pt-12 pb-10 sm:px-6 sm:pt-16">
       {/* 마음 수를 불러오는 동안에는 처음 값으로 먼저 보여 준다. */}
       <Suspense
         fallback={

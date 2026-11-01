@@ -169,7 +169,7 @@ export default function WorkGallery({ profile, works, initialHearts }: Props) {
           </label>
         </div>
 
-        <ul className="mt-4 flex flex-col gap-3">
+        <ul className="mt-4 grid gap-3 md:grid-cols-2">
           {visible.map((work) => (
             <li key={work.id}>
               <WorkCard
