@@ -31,7 +31,7 @@ export type Work = {
 };
 
 export const profile: Profile = {
-  name: "김뜨개",
+  name: "아트곽",
   bio: [
     "한 코 한 코, 마음을 엮는 손뜨개 기록장입니다.",
     "도안과 실 정보까지 함께 나눠요.",

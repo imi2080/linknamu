@@ -15,8 +15,8 @@ const gaegu = Gaegu({
 });
 
 export const metadata: Metadata = {
-  title: "링크타래 | 김뜨개",
-  description: "한 코 한 코, 마음을 엮는 김뜨개의 작품과 링크 모음",
+  title: "링크타래 | 아트곽",
+  description: "한 코 한 코, 마음을 엮는 아트곽의 작품과 링크 모음",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
