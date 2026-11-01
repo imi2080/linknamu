@@ -123,14 +123,14 @@ export default function WorkGallery({ profile, works, initialHearts }: Props) {
         totalHearts={totalHearts}
       />
 
-      <section aria-labelledby="works-heading" className="mt-8">
+      <section aria-labelledby="works-heading" className="mt-10">
         <h2 id="works-heading" className="sr-only">
           뜨개 작품
         </h2>
 
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex items-center justify-between gap-3">
           {/* 화면이 좁으면 탭 줄만 가로로 넘겨 본다. */}
-          <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 sm:mx-0 sm:px-0 sm:pb-0">
+          <div className="flex min-w-0 gap-0.5 overflow-x-auto [scrollbar-width:none] rounded-full bg-paper/60 p-1 ring-1 ring-cocoa/5 backdrop-blur">
             {tabs.map((tab) => {
               const active = tab.value === filter;
               return (
@@ -139,24 +139,29 @@ export default function WorkGallery({ profile, works, initialHearts }: Props) {
                   type="button"
                   onClick={() => setFilter(tab.value)}
                   aria-pressed={active}
-                  className={`shrink-0 cursor-pointer rounded-full border px-5 py-2.5 whitespace-nowrap transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coral ${
+                  className={`flex shrink-0 cursor-pointer items-center gap-1 rounded-full px-2.5 py-1.5 text-sm whitespace-nowrap sm:px-3 transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coral ${
                     active
-                      ? "border-coral bg-coral text-white"
-                      : "border-oat bg-paper text-cocoa hover:border-coral"
+                      ? "bg-paper font-bold text-cocoa shadow-sm"
+                      : "text-latte hover:text-cocoa"
                   }`}
                 >
-                  {tab.value} {tab.count}
+                  {tab.value}
+                  <span
+                    className={`text-xs tabular-nums ${active ? "text-coral" : "text-latte/70"}`}
+                  >
+                    {tab.count}
+                  </span>
                 </button>
               );
             })}
           </div>
 
-          <label className="flex items-center justify-end gap-3 text-sm text-latte">
-            정렬
+          <label className="shrink-0 text-sm text-latte">
+            <span className="sr-only">정렬</span>
             <select
               value={sort}
               onChange={(event) => setSort(event.target.value as Sort)}
-              className="cursor-pointer rounded-2xl border border-oat bg-paper px-4 py-2.5 text-base text-cocoa focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coral"
+              className="cursor-pointer rounded-full bg-transparent px-2 py-1.5 text-sm text-latte hover:text-cocoa focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coral"
             >
               <option value="latest">최신순</option>
               <option value="popular">인기순</option>
@@ -164,7 +169,7 @@ export default function WorkGallery({ profile, works, initialHearts }: Props) {
           </label>
         </div>
 
-        <ul className="mt-6 grid gap-4 md:grid-cols-2">
+        <ul className="mt-4 flex flex-col gap-3">
           {visible.map((work) => (
             <li key={work.id}>
               <WorkCard

@@ -5,20 +5,20 @@ export default function WorkMeta({ work }: { work: Work }) {
   const label = LEVEL_LABELS[work.level];
 
   return (
-    <span className="flex items-center gap-3">
-      <span className="rounded-full bg-oat px-3 py-1 text-sm text-latte">
+    <span className="flex items-center gap-2.5">
+      <span className="rounded-md bg-oat/70 px-2 py-0.5 text-xs text-latte">
         {work.category}
       </span>
       <span
-        className="flex items-center gap-1.5 text-sm text-latte"
+        className="flex items-center gap-1.5 text-xs text-latte"
         aria-label={`난이도 ${label}`}
       >
         <span className="flex gap-0.5" aria-hidden>
           {[1, 2, 3].map((step) => (
             <span
               key={step}
-              className={`size-2.5 rounded-full border-[1.5px] border-sage ${
-                step <= work.level ? "bg-sage" : "bg-transparent"
+              className={`size-1.5 rounded-full ${
+                step <= work.level ? "bg-sage" : "bg-oat"
               }`}
             />
           ))}

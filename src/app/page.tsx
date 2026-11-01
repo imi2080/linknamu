@@ -6,7 +6,7 @@ import { getCounts } from "@/lib/counters";
 
 export default function Home() {
   return (
-    <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-8 sm:px-6 sm:py-12">
+    <main className="mx-auto w-full max-w-xl flex-1 px-4 pt-12 pb-10 sm:pt-16">
       {/* 마음 수를 불러오는 동안에는 처음 값으로 먼저 보여 준다. */}
       <Suspense
         fallback={
@@ -16,7 +16,7 @@ export default function Home() {
         <GalleryWithHearts />
       </Suspense>
 
-      <footer className="mt-12 text-center text-sm text-latte/80">
+      <footer className="mt-12 text-center text-xs text-latte/70">
         카드를 누르면 작품 이야기와 도안·영상 링크를 볼 수 있어요.
       </footer>
     </main>

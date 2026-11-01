@@ -1,26 +1,31 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-cream: #fbf5ec;
-  --color-paper: #fffdf9;
-  --color-oat: #f0e3d2;
-  --color-coral: #c96b62;
-  --color-blush: #f7e0dc;
+  /* 모던·미니멀 톤: 따뜻한 무채색 + 장미빛 코랄 포인트 */
+  --color-cream: #faf4ee;
+  --color-paper: #ffffff;
+  --color-oat: #efe7df;
+  --color-coral: #d0675d;
+  --color-blush: #fbeae7;
   --color-sage: #7f9f7a;
-  --color-cocoa: #54403a;
-  --color-latte: #7b6356;
-  --font-sans: var(--font-gowun-dodum), "Apple SD Gothic Neo", "Malgun Gothic",
+  --color-cocoa: #2a211d;
+  --color-latte: #75675f;
+  --font-sans: var(--font-pretendard), -apple-system, "Apple SD Gothic Neo", "Malgun Gothic",
     sans-serif;
-  --font-display: var(--font-gaegu), var(--font-gowun-dodum), sans-serif;
 }
 
 body {
   color: var(--color-cocoa);
   font-family: var(--font-sans);
-  /* 크림색 바탕에 옅은 점무늬 */
+  letter-spacing: -0.01em;
+  /* 따뜻한 톤의 부드러운 그러데이션 (스크롤해도 고정) */
   background-color: var(--color-cream);
-  background-image: radial-gradient(#efe1cf 1.6px, transparent 1.6px);
-  background-size: 22px 22px;
+  background-image:
+    radial-gradient(60rem 40rem at 10% -10%, #fde3d6 0%, transparent 60%),
+    radial-gradient(50rem 36rem at 100% 10%, #fbe9cf 0%, transparent 60%),
+    radial-gradient(60rem 40rem at 50% 110%, #f6dcdc 0%, transparent 60%),
+    linear-gradient(180deg, #fdf6ef 0%, #faf1ea 100%);
+  background-attachment: fixed;
 }
 
 /* 작품 상세 보기가 열려 있는 동안 뒤 화면이 스크롤되지 않게 한다. */

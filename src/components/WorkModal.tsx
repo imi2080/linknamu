@@ -31,15 +31,15 @@ export default function WorkModal({ work, onClose }: Props) {
         if (event.target === event.currentTarget) onClose();
       }}
       aria-labelledby="work-modal-title"
-      className="m-auto max-h-[92dvh] w-[calc(100%-2rem)] max-w-md overflow-y-auto rounded-[28px] bg-cream p-0 text-cocoa shadow-xl backdrop:bg-cocoa/50"
+      className="m-auto max-h-[92dvh] w-[calc(100%-2rem)] max-w-md overflow-y-auto rounded-3xl bg-paper p-0 text-cocoa shadow-2xl backdrop:bg-cocoa/40 backdrop:backdrop-blur-sm"
     >
       {work && (
-        <div className="relative p-4">
+        <div className="relative p-3">
           <button
             type="button"
             onClick={onClose}
             aria-label="닫기"
-            className="absolute top-6 right-6 flex size-9 cursor-pointer items-center justify-center rounded-full bg-white/90 text-lg text-cocoa shadow transition hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coral"
+            className="absolute top-5 right-5 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/90 text-sm text-cocoa shadow-sm backdrop-blur transition hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coral"
           >
             ✕
           </button>
@@ -51,29 +51,31 @@ export default function WorkModal({ work, onClose }: Props) {
             height={work.imageHeight}
             sizes="(max-width: 448px) 100vw, 448px"
             unoptimized={work.image.endsWith(".svg")}
-            className="max-h-[55dvh] w-full rounded-2xl object-contain"
+            className="max-h-[55dvh] w-full rounded-[18px] object-contain"
             style={{ backgroundColor: work.tint }}
           />
 
+          <div className="px-3 pt-5 pb-3">
           <h2
             id="work-modal-title"
-            className="mt-4 text-center text-2xl font-bold"
+            className="text-xl font-bold tracking-tight"
           >
             {work.title}
           </h2>
-          <div className="mt-2 flex justify-center">
+          <div className="mt-2 flex">
             <WorkMeta work={work} />
           </div>
-          <p className="mt-3 leading-relaxed text-latte">{work.description}</p>
+          <p className="mt-4 text-sm leading-relaxed text-latte">{work.description}</p>
 
           <a
             href={work.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-5 block rounded-full bg-coral px-5 py-3 text-center font-bold text-white transition hover:bg-cocoa focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coral"
+            className="mt-6 block rounded-full bg-cocoa px-5 py-3 text-center text-sm font-bold text-white transition hover:bg-coral focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-coral"
           >
             {work.urlLabel} ↗
           </a>
+          </div>
         </div>
       )}
     </dialog>
